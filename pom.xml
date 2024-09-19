@@ -17,6 +17,7 @@
   <modules>
     <module>gateway</module>
     <module>eureka</module>
+    <module>config</module>
   </modules>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
