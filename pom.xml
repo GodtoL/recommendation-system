@@ -15,12 +15,12 @@
   <name>Matching-System</name>
   <packaging>pom</packaging>
   <modules>
-    <module>gateway</module>
-    <module>eureka</module>
-    <module>config</module>
+    <module>microservice-gateway</module>
+    <module>microservice-eureka</module>
+    <module>microservice-config</module>
     <module>users</module>
-    <module>inventory</module>
-    <module>recommendation-service</module>
+    <module>microservice-inventory</module>
+    <module>microservice-recommendation</module>
   </modules>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
