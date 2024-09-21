@@ -20,7 +20,7 @@ public class UserController {
         userService.saveUser(user);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public ResponseEntity<?> getAllUsers(){
         return ResponseEntity.ok(userService.getAllUsers());
     }
