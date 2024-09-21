@@ -9,9 +9,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class RecommendationService {
 
-    public void matching(ProductDTO product, UserDTO user, PurchaseDTO purchase){
-        System.out.println(user.getName());
-        System.out.println(purchase.getProductId());
-        System.out.println(product.getName());
+    public String matching(ProductDTO product, UserDTO user, PurchaseDTO purchase){
+        String nameUser = user.getName();
+        String nameProduct = product.getName();
+        Long id = purchase.getProductId();
+
+        return nameUser;
     }
 }
