@@ -30,6 +30,14 @@ public class ProductService {
         return productRepository.save(product);
     }
 
+    public List<Product> getProductByCategory(String category){
+        List<Product> products = productRepository.getAllByCategory(category);
+        if (products.isEmpty()){
+            throw new RuntimeException("No se ha encontrado ningún producto en la categoría " + category);
+        }
+        return products;
+    }
+
     public Product updateProduct(Long id, Product productDetails){
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("No se encontró el producto con el id " + id));

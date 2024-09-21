@@ -29,4 +29,10 @@ public class ProductController {
     public ResponseEntity<?> updateProduct(@PathVariable Long id, @RequestBody Product productDetails){
         return ResponseEntity.ok(productService.updateProduct(id, productDetails));
     }
+
+    @GetMapping("/search-by-category/{category}")
+    public ResponseEntity<?> getProductByCategory(@PathVariable String category){
+        return ResponseEntity.ok(productService.getProductByCategory(category));
+    }
+
 }
