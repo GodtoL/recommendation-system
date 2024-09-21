@@ -20,6 +20,7 @@
     <module>config</module>
     <module>users</module>
     <module>inventory</module>
+    <module>recommendation-service</module>
   </modules>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
