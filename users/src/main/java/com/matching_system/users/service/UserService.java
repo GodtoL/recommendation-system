@@ -3,6 +3,7 @@ package com.matching_system.users.service;
 import com.matching_system.users.Models.User;
 import com.matching_system.users.persistence.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,7 +18,7 @@ public class UserService {
     }
 
     public List<User> getAllUsers() {
-        return userRepository.findAll();
+        return (List<User>) userRepository.findAll();
     }
 
     public User getUserById(Long id) {
@@ -69,9 +70,10 @@ public class UserService {
         return userRepository.save(user);
     }
 
-    public void deleteUser(Long id) {
+    public String deleteUser(Long id) {
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("No se encontró el usuario con el id " + id));
         userRepository.delete(user);
+        return "Se ha borrado el usuario con el id " + id;
     }
 }

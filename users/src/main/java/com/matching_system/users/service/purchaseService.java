@@ -4,15 +4,12 @@ import com.matching_system.users.Models.PurchaseHistory;
 import com.matching_system.users.persistence.PurchaseHistoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
 @Service
-public class purchaseService {
-    PurchaseHistoryRepository purchaseHistoryRepository;
+public class purchaseService{
+    private final PurchaseHistoryRepository purchaseHistoryRepository;
 
     @Autowired
     public purchaseService(PurchaseHistoryRepository purchaseHistoryRepository) {
@@ -25,11 +22,15 @@ public class purchaseService {
 
 
     public List<PurchaseHistory> getPurchaseById(Long userId){
-        return purchaseHistoryRepository.findAllByUserId(userId);
+        List<PurchaseHistory> purchases = purchaseHistoryRepository.findAllByUserId(userId);
+        if (purchases.isEmpty()){
+            throw new RuntimeException("No se encontraron compras con id " + userId);
+        }
+        return purchases;
+
     }
 
-
-    public PurchaseHistory postPurchase(PurchaseHistory purchase){
+    public PurchaseHistory savePurchase(PurchaseHistory purchase){
         return purchaseHistoryRepository.save(purchase);
     }
 }
