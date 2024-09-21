@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class purchaseService{
+public class PurchaseService {
     private final PurchaseHistoryRepository purchaseHistoryRepository;
 
     @Autowired
-    public purchaseService(PurchaseHistoryRepository purchaseHistoryRepository) {
+    public PurchaseService(PurchaseHistoryRepository purchaseHistoryRepository) {
         this.purchaseHistoryRepository = purchaseHistoryRepository;
     }
 
@@ -20,14 +20,12 @@ public class purchaseService{
         return purchaseHistoryRepository.findAll();
     }
 
-
     public List<PurchaseHistory> getPurchaseById(Long userId){
         List<PurchaseHistory> purchases = purchaseHistoryRepository.findAllByUserId(userId);
         if (purchases.isEmpty()){
             throw new RuntimeException("No se encontraron compras con id " + userId);
         }
         return purchases;
-
     }
 
     public PurchaseHistory savePurchase(PurchaseHistory purchase){
