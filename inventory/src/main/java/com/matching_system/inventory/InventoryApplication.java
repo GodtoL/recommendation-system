@@ -1,4 +1,4 @@
-package com.matching_system.users;
+package com.matching_system.inventory;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class UsersApplication {
+public class InventoryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UsersApplication.class, args);
+		SpringApplication.run(InventoryApplication.class, args);
 	}
 
 }
