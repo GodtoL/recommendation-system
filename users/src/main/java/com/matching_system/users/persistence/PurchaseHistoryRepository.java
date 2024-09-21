@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface purchaseHistoryRepository extends JpaRepository<PurchaseHistory, Long> {
-    List<User> findAllByUserId(Long id);
+public interface PurchaseHistoryRepository extends JpaRepository<PurchaseHistory, Long> {
+    List<PurchaseHistory> findAllByUserId(Long id);
 }
