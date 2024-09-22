@@ -5,10 +5,9 @@ import com.recommendation_service.Dto.PurchaseDTO;
 import com.recommendation_service.Dto.UserDTO;
 import com.recommendation_service.Service.RecommendationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/recommend-product")
@@ -16,8 +15,8 @@ public class RecommendController {
     @Autowired
     RecommendationService recommendationService;
 
-    @GetMapping()
-    public String matching(@RequestBody ProductDTO product, @RequestBody UserDTO user, @RequestBody PurchaseDTO purchase){
-        return recommendationService.matching(product, user, purchase);
+    @GetMapping("/{category}")
+    public List<ProductDTO> matching(@PathVariable String category){
+        return recommendationService.matching(category);
     }
 }

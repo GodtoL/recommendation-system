@@ -1,15 +1,28 @@
 package com.recommendation_service.Client;
 
-import com.recommendation_service.Dto.UserDTO;
-import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.apache.catalina.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestTemplate;
 
-import java.util.List;
+import java.time.LocalDateTime;
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Component
+public class UserClient {
 
-@FeignClient(name= "match-user", url = "localhost:8090/api/user")
-public interface UserClient {
-    @GetMapping("/{id}")
-    List<UserDTO> getUserById(@PathVariable Long id);
+    private Long id;
+    private String name;
+    private String email;
+    private LocalDateTime registrationDate;
+    private int age;
+    private String address;
+    private String phoneNumber;
+
 }

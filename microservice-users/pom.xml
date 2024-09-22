@@ -8,7 +8,7 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<groupId>com.matching-system</groupId>
-	<artifactId>users</artifactId>
+	<artifactId>microservice-users</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>users</name>
 	<description>user data</description>

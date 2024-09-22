@@ -2,12 +2,14 @@ package com.matching_system.users.Controllers;
 
 import com.matching_system.users.Models.PurchaseHistory;
 import com.matching_system.users.service.PurchaseService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/purchase")
 public class PurchaseHistoryController {
+    @Autowired
     PurchaseService purchaseService;
 
     @GetMapping("/all")

@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: match-inventory
+    name: match-recommendation
   config:
     import: optional:configserver:http://localhost:8888
 
