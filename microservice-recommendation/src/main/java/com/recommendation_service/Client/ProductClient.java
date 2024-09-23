@@ -12,4 +12,7 @@ public interface ProductClient {
 
     @GetMapping("/search-by-category/{category}")
     List<ProductDTO> findAllproductsbyCategory(@PathVariable String category);
+
+    @GetMapping("/{id}")
+    ProductDTO findProductById(@PathVariable Long id);
 }

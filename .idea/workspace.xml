@@ -5,37 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ae79d5d-0a22-4c6d-b82a-c2071bbcb160" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-inventory/src/main/resources/import.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-users/src/main/resources/import.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-inventory/src/main/java/com/matching_system/inventory/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-inventory/src/main/java/com/matching_system/inventory/Controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-inventory/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-inventory/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Client/ProductClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Client/ProductClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Client/PurchaseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Client/PurchaseClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Client/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Client/UserClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Controller/RecommendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Controller/RecommendController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/RecommendationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/RecommendationServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Service/RecommendationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Service/RecommendationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-recommendation/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-recommendation/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/main/java/com/matching_system/users/Controllers/PurchaseHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/src/main/java/com/matching_system/users/Controllers/PurchaseHistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/main/java/com/matching_system/users/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/src/main/java/com/matching_system/users/Controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/main/java/com/matching_system/users/Models/PurchaseHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/src/main/java/com/matching_system/users/Models/PurchaseHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/main/java/com/matching_system/users/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/src/main/java/com/matching_system/users/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/main/java/com/matching_system/users/UsersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/src/main/java/com/matching_system/users/UsersApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/main/java/com/matching_system/users/persistence/PurchaseHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/src/main/java/com/matching_system/users/persistence/PurchaseHistoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/main/java/com/matching_system/users/persistence/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/src/main/java/com/matching_system/users/persistence/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/main/java/com/matching_system/users/service/PurchaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/src/main/java/com/matching_system/users/service/PurchaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/main/java/com/matching_system/users/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/src/main/java/com/matching_system/users/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/src/test/java/com/matching_system/users/UsersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/src/test/java/com/matching_system/users/UsersApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,22 +36,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EurekaApplication.executor": "Run",
-    "Application.InventoryApplication.executor": "Run",
-    "Application.RecommendationServiceApplication.executor": "Run",
-    "Application.UsersApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/godto/OneDrive/Escritorio/java/Microservicios matchmaking/algorithm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EurekaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InventoryApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RecommendationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UsersApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/godto/OneDrive/Escritorio/java/Microservicios matchmaking/algorithm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.RecommendationServiceApplication">
     <configuration name="EurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.matching_system.eureka.EurekaApplication" />
@@ -133,9 +108,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.RecommendationServiceApplication" />
+        <item itemvalue="Application.UsersApplication" />
         <item itemvalue="Application.InventoryApplication" />
         <item itemvalue="Application.EurekaApplication" />
-        <item itemvalue="Application.UsersApplication" />
       </list>
     </recent_temporary>
   </component>

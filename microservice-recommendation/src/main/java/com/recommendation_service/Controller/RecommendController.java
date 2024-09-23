@@ -15,8 +15,8 @@ public class RecommendController {
     @Autowired
     RecommendationService recommendationService;
 
-    @GetMapping("/{category}")
-    public List<ProductDTO> matching(@PathVariable String category){
-        return recommendationService.matching(category);
+    @GetMapping("/{userId}")
+    public String  matching(@PathVariable Long userId){
+        return recommendationService.matching(userId);
     }
 }
