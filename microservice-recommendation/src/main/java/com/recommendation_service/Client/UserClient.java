@@ -17,7 +17,7 @@ import org.springframework.web.client.RestTemplate;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@FeignClient(name= "match-user", url = "localhost:8090/api/user")
+@FeignClient(name= "match-user", url = "http://localhost:8080/api/user")
 public interface UserClient {
     @GetMapping("/{id}")
     UserDTO getUserById(@PathVariable Long id);
