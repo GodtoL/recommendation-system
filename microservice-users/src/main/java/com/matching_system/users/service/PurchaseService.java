@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 @Service
 public class PurchaseService {
@@ -23,7 +24,7 @@ public class PurchaseService {
     public List<PurchaseHistory> getPurchaseById(Long userId){
         List<PurchaseHistory> purchases = purchaseHistoryRepository.findAllByUserId(userId);
         if (purchases.isEmpty()){
-            throw new RuntimeException("No se encontraron compras con id " + userId);
+            throw new NoSuchElementException("No se encontraron compras con id " + userId);
         }
         return purchases;
     }

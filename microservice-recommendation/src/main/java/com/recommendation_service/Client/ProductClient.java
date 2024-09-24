@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name= "match-inventory", url = "localhost:8080/api/product")
+@FeignClient(name = "match-inventory", url = "http://localhost:8080/api/product")
 public interface ProductClient {
 
     @GetMapping("/search-by-category/{category}")

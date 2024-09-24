@@ -1,24 +1,5 @@
-server:
-  port: 8090
-
 spring:
   application:
     name: match-user
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/usersDb
-    username: postgres
-    password: 12345
-  jpa:
-    hibernate:
-      ddl-auto: update
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
   config:
     import: optional:configserver:http://localhost:8888
-
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    service_url:
-      defaultZone: http://localhost:8761/eureka
