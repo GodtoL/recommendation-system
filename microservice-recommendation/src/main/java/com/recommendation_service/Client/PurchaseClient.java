@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name= "match-user-purchase", url = "localhost:8080/api/purchase")
+@FeignClient(name= "match-user-purchase", url = "localhost:8090/api/purchase")
 public interface PurchaseClient {
     @GetMapping("/{id}")
     List<PurchaseDTO> getPurchasesById(@PathVariable Long id);
