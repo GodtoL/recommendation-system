@@ -4,6 +4,14 @@ server:
 spring:
   application:
     name: match-recommendation
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    template:
+      default-receive-queue: recommendationQueue
 
 eureka:
   instance:
@@ -22,3 +30,4 @@ resilience4j:
         minimumNumberOfCalls: 1
         waitDurationInOpenState: 10000ms
         failureRateThreshold: 50
+

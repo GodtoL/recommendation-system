@@ -5,13 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ae79d5d-0a22-4c6d-b82a-c2071bbcb160" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/microservice-users/src/main/java/com/matching_system/users/Controllers/RabbitMqListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/match-gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/match-gateway.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Client/ProductClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Client/ProductClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Client/PurchaseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Client/PurchaseClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Client/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Client/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/match-inventory.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/match-inventory.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/match-recommendation.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/match-recommendation.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/match-user.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-config/src/main/resources/configurations/match-user.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-gateway/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-gateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-gateway/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-gateway/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-gateway/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-gateway/src/main/java/com/matching_system/gateway/GatewayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-gateway/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-gateway/src/test/java/com/matching_system/gateway/GatewayApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-recommendation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-recommendation/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Controller/RecommendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-recommendation/src/main/java/com/recommendation_service/Controller/RecommendController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-users/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-users/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ApiGatewaytwoApplication.executor": "Run",
     "Application.ConfigApplication.executor": "Run",
     "Application.EurekaApplication.executor": "Run",
     "Application.GatewayApplication.executor": "Debug",
@@ -49,8 +63,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/godto/OneDrive/Escritorio/java/Microservicios matchmaking/algorithm",
-    "project.structure.last.edited": "Project",
+    "last_opened_file_path": "C:/Users/Usuario/Downloads/socios",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
@@ -60,7 +74,7 @@
       <recent name="com.matching_system.gateway.security" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RecommendationServiceApplication">
+  <component name="RunManager" selected="Application.InventoryApplication">
     <configuration name="ConfigApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.matching_system.config.ConfigApplication" />
       <module name="microservice-config" />
@@ -128,9 +142,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RecommendationServiceApplication" />
-        <item itemvalue="Application.UsersApplication" />
         <item itemvalue="Application.InventoryApplication" />
+        <item itemvalue="Application.UsersApplication" />
+        <item itemvalue="Application.RecommendationServiceApplication" />
         <item itemvalue="Application.EurekaApplication" />
         <item itemvalue="Application.ConfigApplication" />
       </list>
