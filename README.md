@@ -7,7 +7,7 @@ Este proyecto implementa un sistema básico de microservicios que recomienda pro
 El proyecto está compuesto por los siguientes microservicios:
 
 - **microservice-config**: Servicio de configuración centralizada para todos los microservicios, facilitando la gestión de configuraciones.
-- **microservice-eureka**: Servicio de descubrimiento (Eureka) que permite registrar y localizar los microservicios.
+- **microservice- eureka**: Servicio de descubrimiento (Eureka) que permite registrar y localizar los microservicios.
 - **microservice-inventory**: Microservicio de inventario que gestiona la disponibilidad de productos.
 - **microservice-recommendation**: Servicio que genera recomendaciones de productos basadas en el perfil del usuario.
 - **microservice-users**: Servicio que gestiona la información y preferencias de los usuarios.
